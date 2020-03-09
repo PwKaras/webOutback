@@ -1,0 +1,237 @@
+body {
+    font-family: "Lato";
+}
+
+/* header */
+@media (max-width:400px) {
+    .logo {
+        align-self: center;
+    }
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    margin: 0;
+    float: left;
+    padding: 0.5rem;
+}
+
+.logo h2:after {
+    font-family: 'Font Awesome 5 Free';
+    content: " \f185";
+    font-weight: 900;
+    font-size: 3rem;
+    color: #ff920a;
+}
+
+@media (min-width:400px) {
+    .menu ul {
+        display: flex;
+        justify-content: stretch;
+    }
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.menu li {
+    background-color: #ff920a;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0.5rem;
+    ;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* title */
+
+.page-title h1 {
+    margin: 0;
+    padding: 1rem;
+}
+
+.page-title h2 {
+    margin: 0;
+    padding: 1rem;
+}
+
+#false:focus {
+    color: red;
+    display: none;
+}
+
+article {
+    padding: 0rem;
+    margin-bottom: 0.5rem;
+    background-color: orangered;
+    background-clip: content-box;
+}
+
+article header {
+    background-color: #ff920a;
+    margin: 0px;
+    padding: 0rem;
+}
+
+article h2 {
+    margin: 0px;
+    padding: 1rem;
+}
+
+article h3 {
+    margin: 0px;
+    padding: 1rem;
+}
+
+article p {
+    margin: 0px;
+    padding: 1rem;
+}
+
+/* section author */
+
+.author h3 {
+    background-color: #ff920a;
+    margin: 0px;
+    padding: 1rem;
+}
+
+.author p {
+    background-color: orangered;
+    margin: 0px;
+    padding: 1rem;
+}
+
+/* footer */
+
+footer h2 {
+    background-color: #ff920a;
+    padding: 1rem;
+    margin: 0;
+    text-align: center
+}
+
+@media (min-width:601px) {
+    body {
+        padding: 2rem
+    }
+    
+    article {
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    article h2 {
+        padding: 1rem;
+    }
+    
+    article h3 {
+        padding: 1rem;
+    }
+    
+    article p {
+        padding: 1rem;
+    }
+    
+    .page-header {
+        margin-bottom: 2rem;
+    }
+    
+    /* title */
+    .page-title {
+        min-height: 400px;
+        text-align: center;
+        background-image: url(../images/daniele-nabissi-93tDWbVql00-unsplash.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .page-title img {
+        display: none;
+    }
+    
+    /* main-content */
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid orangered;
+        margin-bottom: 2rem;
+    }
+    
+    .main-content #about {
+        width: 300px;
+        flex-grow: 1;
+    }
+    
+    .main-content aside {
+        width: 300px;
+        display: flex;
+        align-items: stretch;
+    }
+    
+    /* news */
+    .news {
+        border: 1px solid orangered;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        margin-bottom: 2rem;
+    }
+    
+    .news article {
+        width: 50%;
+        height: auto;
+    }
+    
+    
+    /* section author */
+    .author {
+        border: 1px solid orangered;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    
+    .author div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    
+    .author h3 {
+        text-align: center;     
+    }
+    
+    .author img {
+        width: 300px;
+        float: left;
+    }
+
+    .author p {
+        width: 200px;
+        flex-grow: 1;
+    }
+}
+
+
+@media (min-width:1200px) {
+    .news article {
+        width: 25%;
+        height: auto;
+    }
+}
