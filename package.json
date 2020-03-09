@@ -1,0 +1,19 @@
+{
+  "name": "weboutback",
+  "version": "1.0.0",
+  "description": "quiz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PwKaras/webOutback.git"
+  },
+  "author": "Pawel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PwKaras/webOutback/issues"
+  },
+  "homepage": "https://github.com/PwKaras/webOutback#readme"
+}

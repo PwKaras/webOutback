@@ -52,6 +52,7 @@ body {
 img {
     width: 100%;
     object-fit: cover;
+    display: block
 }
 
 /* title */
@@ -66,11 +67,28 @@ img {
     padding: 1rem;
 }
 
-#false:focus {
-    color: red;
-    display: none;
+/* quiz */
+.quiz ul {
+    margin: 0;
+    list-style: none;
+    padding: 0.5rem;
 }
 
+.quiz button {
+    background-color: #ff920a;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0.5rem;
+    ;
+}
+
+.fas {
+    font-weight: 900;
+    font-size: 3rem;
+    color: #ff920a;
+}
+
+/* articles */
 article {
     padding: 0rem;
     margin-bottom: 0.5rem;
@@ -100,6 +118,9 @@ article p {
 }
 
 /* section author */
+.author {
+    margin-bottom: 0.5rem;
+}
 
 .author h3 {
     background-color: #ff920a;
@@ -127,6 +148,7 @@ footer h2 {
         padding: 2rem
     }
     
+    /* articles */
     article {
         padding: 1rem;
         margin-bottom: 0.5rem;
@@ -144,6 +166,7 @@ footer h2 {
         padding: 1rem;
     }
     
+    /* header */
     .page-header {
         margin-bottom: 2rem;
     }
@@ -175,12 +198,12 @@ footer h2 {
     }
     
     .main-content #about {
-        width: 300px;
+        width: 65%;
         flex-grow: 1;
     }
     
     .main-content aside {
-        width: 300px;
+        width: 35%;
         display: flex;
         align-items: stretch;
     }
@@ -223,7 +246,7 @@ footer h2 {
     }
 
     .author p {
-        width: 200px;
+        width: 100px;
         flex-grow: 1;
     }
 }

@@ -19,16 +19,16 @@
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="#about">about</a></li>
-                <li><a href="#news">news</a></li>
-                <li><a href="#author">author</a></li>
+                <li><a href="#about">zajrzyj tu</a></li>
+                <li><a href="#news">wiadomości</a></li>
+                <li><a href="#author">autor</a></li>
             </ul>
         </nav>
     </header>
     <section class="page-title">
         <div class="background-image">
             <img src="images/daniele-nabissi-93tDWbVql00-unsplash.jpg" alt="Outback  empty road">
-            <h1 class="main-title">My Outback</h1>
+            <h1 class="main-title">Mój Outback</h1>
             <h2 class="subtitle">just explor</h2>
         </div>
     </section>
@@ -38,25 +38,25 @@
                 <img src="images/shield-288565_1920.jpg" alt="kangooro sign warninig">
                 <h2 class="main-article-title">Czym jest australijski Outback?</h2>
             </header>
-            <p class="main-article body">Ta strona poświęcona jest temu co zostało we mnie po podróży do Outbacku jesienią 2017r. Australia to odcięty od reszty świata kontynent, z całkowicie niespotykanymi gdziekolwiek indziej krajobrazami, które wypełniają najdziwniejsi przedstawiciele fauny i flory, z kangurami na czele. Australia kojarzy się z rafą koralową, tropikami, plażami, oceanem, wielkimi miastami, dziwną i czasami przerażającą historią. Jednak serce Australii to Outback. Outback to pustkowie bezkres czerwonej, rozgrzanej ziemi, którą widać aż za horyzont.  idealne miejsce dla chcących poczuć nieskrępowaną wolność, ciszę i spokój, a przy okazji spotkać kangury.
-                </p>
+            <p class="main-article body">Ta strona poświęcona jest temu co zostało we mnie po podróży do Outbacku jesienią 2017r. Australia to odcięty od reszty świata kontynent, z całkowicie niespotykanymi gdziekolwiek indziej krajobrazami, które wypełniają najdziwniejsi przedstawiciele fauny i flory, z kangurami na czele. Australia kojarzy się z rafą koralową, tropikami, plażami, oceanem, wielkimi miastami, dziwną i czasami przerażającą historią. Jednak serce Australii to Outback. Outback to pustkowie bezkres czerwonej, rozgrzanej ziemi, którą widać aż za horyzont. idealne miejsce dla chcących poczuć nieskrępowaną wolność, ciszę i spokój, a przy okazji spotkać kangury.
+            </p>
         </article>
         <aside>
             <article>
                 <header>
-                    <h2>be curious</h2>
+                    <h2>quiz</h2>
                 </header>
                 <div class="quiz">
-                    <p>What animal is most abundant in Outback?</p>
+                    <p>Jakich stworzeń żyje najwięcej w Outbacku?</p>
                     <ol>
-                        <li><button type="button" onclick="screen('wrong anwser')">kangaroo</button></li>
-                        <li><button type="button">cow</button></li>
-                        <li><button type="button">fly</button></li>
+                        <li><button type="button" onclick="quizF()">kangurów</button></li>
+                        <li><button type="button" onclick="quizF()">krów</button></li>
+                        <li><button type="button" onclick="quizT()">much</button></li>
                     </ol>
-
                 </div>
-
-
+                <div>
+                    <p id="answer"></p>
+                </div>
             </article>
         </aside>
     </section>
@@ -66,7 +66,7 @@
                 <img src="images/Horses Outback.JPG" alt="horses Outback">
                 <h3 class="news-title">Pierwszy był koń</h3>
             </header>
-            <p class="news-body">Do Australii poleciałem z myślą o tym żeby jak najszybciej zobaczyć kangury na wolności, w ich naturalnym, outbackowym (pustynnym) środowisku. Pierwsze byył konie… Wydawały się żyć na swolności, nigdzie nie było widać płotów, granic, niczego, nic nie było widać oprócz niskich drzew, krzaków, czegoś w rodzaju traw, fioletowych kwiatów (była tamtejsza wiosna), czerwonej ziemi i koni. Zero ludzi, jakichkolwiek zabudowań. Piękne stado, nie wiem czy dzikich, ale na pewno dziko wyglądających koni przywitało mnie na australijskim outbacku. Nie tak do końca… najpierw przywitało mnie stado namolnych much, wchodzących dosłownie wszędzie.</p>
+            <p class="news-body">Do Australii poleciałem z myślą o tym żeby jak najszybciej zobaczyć kangury na wolności, w ich naturalnym, outbackowym (pustynnym) środowisku. Pierwsze byył konie… Wydawały się żyć na swolności, nigdzie nie było widać płotów, granic, niczego, nic nie było widać oprócz niskich drzew, krzaków, czegoś w rodzaju traw, fioletowych kwiatów (była tamtejsza wiosna), czerwonej ziemi i koni. Zero ludzi, jakichkolwiek zabudowań. Na australijskim outbacku najpierw przywitało mnie piękne stado, nie wiem czy dzikich, ale na pewno dziko wyglądających koni. Nie tak do końca… najpierw przywitało mnie stado namolnych much, wchodzących dosłownie wszędzie.</p>
         </article>
         <article>
             <header>
@@ -103,6 +103,7 @@
     <footer class="page-footer">
         <h2>&copy2020</h2>
     </footer>
+    <script src="src/index.js"></script>
 </body>
 
 </html>
