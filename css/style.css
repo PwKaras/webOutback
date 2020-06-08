@@ -26,6 +26,7 @@ body {
     font-weight: 900;
     font-size: 3rem;
     color: #ff920a;
+    
 }
 
 @media (min-width:400px) {
@@ -46,7 +47,11 @@ body {
     padding: 0.5rem;
     border-radius: 4px;
     margin: 0.5rem;
-    ;
+    box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.67);
+}
+
+.menu li > a {
+    text-decoration: none;
 }
 
 img {
@@ -56,6 +61,9 @@ img {
 }
 
 /* title */
+.page-title {
+    box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.67);
+}
 
 .page-title h1 {
     margin: 0;
@@ -120,6 +128,7 @@ article p {
 /* section author */
 .author {
     margin-bottom: 0.5rem;
+    box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.67);
 }
 
 .author h3 {
@@ -136,6 +145,9 @@ article p {
 
 /* footer */
 
+footer {
+    box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.67);
+}
 footer h2 {
     background-color: #ff920a;
     padding: 1rem;
@@ -195,6 +207,7 @@ footer h2 {
         flex-wrap: wrap;
         border: 1px solid orangered;
         margin-bottom: 2rem;
+        box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.67);
     }
     
     .main-content #about {
@@ -215,6 +228,7 @@ footer h2 {
         flex-wrap: wrap;
         align-items: stretch;
         margin-bottom: 2rem;
+        box-shadow: 6px 1px 6px 1px rgba(0,0,0,0.67);
     }
     
     .news article {
