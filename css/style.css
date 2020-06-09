@@ -68,6 +68,7 @@ img {
 .page-title h1 {
     margin: 0;
     padding: 1rem;
+    text-shadow: 12px 12px 0 rgba(0,0,0,0.67);;
 }
 
 .page-title h2 {

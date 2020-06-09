@@ -12,25 +12,24 @@ function quizT() {
     </h2><img src="images/gabriel-gabriel-4HXOzHQInPw-unsplash.jpg" alt="fly"><p>to niestety prawda</p>`
 };
 
-//moving shodow on the page title
+//moving shodow on the page title - depending on the mousemove
 const pageTitle = document.querySelector('.page-title');
 const text = pageTitle.querySelector('.main-title');
 const shadowLength = 150;
 
 function shadow(event) {
     const {offsetWidth: width, offsetHeight: height } = pageTitle;
-    let x = event.offsetX;
-    let y = event.offsetY;
-    
+    let { offsetX: x, offsetY: y} = event;
+ 
     if(this !== event.target) {
-        x = x + event.target.offsetLeft;
-        y = y + event.target.offsetTop;
-    }
-    console.log(event.target.offsetLeft);
-    console.log(event.target.offsetTop);
-    // console.log(x,y);
-    const shadowLengthX = ( x/width * shadowLength) - (shadowLength/2);
-    const shadowLengthY = ( y/width * shadowLength) - (shadowLength/2);
+        x = x + event.target.offsetLeft - this.offsetLeft;
+        y = y + event.target.offsetTop - this.offsetTop;
+    };
+
+    const shadowLengthX = Math.round(( x/width * shadowLength) - (shadowLength/2));
+    
+    const shadowLengthY = Math.round(( y/height * shadowLength) - (shadowLength/2));
+
     text.style.textShadow = `${shadowLengthX}px ${shadowLengthY}px 0 rgba(0,0,0,0.67)`
 }
 
